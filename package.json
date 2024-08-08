@@ -3,6 +3,7 @@
   "displayName": "Exec Command",
   "description": "",
   "version": "0.0.1",
+  "publisher": "thexcw",
   "engines": {
     "vscode": "^1.85.1"
   },
@@ -45,7 +46,7 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.92.0",
+    "@types/vscode": "^1.85.1",
     "@types/mocha": "^10.0.7",
     "@types/node": "20.x",
     "@typescript-eslint/eslint-plugin": "^7.14.1",
@@ -54,5 +55,9 @@
     "typescript": "^5.4.5",
     "@vscode/test-cli": "^0.0.9",
     "@vscode/test-electron": "^2.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:thexcw/vscode-extension-exec-command.git"
   }
 }
