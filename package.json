@@ -4,7 +4,7 @@
   "description": "",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.92.0"
+    "vscode": "^1.85.1"
   },
   "categories": [
     "Other"
@@ -14,8 +14,25 @@
   "contributes": {
     "commands": [
       {
-        "command": "exec-command.helloWorld",
-        "title": "Hello World"
+        "command": "exec-command.execute",
+        "title": "Execute Command"
+      }
+    ],
+    "configuration":[
+      {
+        "title": "Exec Command",
+        "properties": {
+          "exec-command.command": {
+            "type": "string",
+            "default": "echo 'This is default command (echo), specify your command in Exec Command settings '",
+            "description": "Specifies the command to run"
+          },
+          "exec-command.useSelectionAsStdin": {
+            "type": "boolean",
+            "default": false,
+            "description": "Use text editor selection as stdin for command"
+          }
+        }
       }
     ]
   },
