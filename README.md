@@ -2,8 +2,8 @@
 
 ## Features
 
-1 Run shell command
-2 Use text editor selection as stdin for shell command
+* Run shell command
+* Use text editor selection as stdin for shell command
 
 
 ## Extension Settings
