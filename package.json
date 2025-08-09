@@ -2,7 +2,7 @@
   "name": "exec-command",
   "displayName": "Exec Command",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "thexcw",
   "engines": {
     "vscode": "^1.85.1"
@@ -10,13 +10,19 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:myFindFiles"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "exec-command.execute",
         "title": "Execute Command"
+      },
+      {
+        "command": "myFindFiles",
+        "title": "myFindFiles"
       }
     ],
     "configuration":[

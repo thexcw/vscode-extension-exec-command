@@ -20,6 +20,8 @@ export function execCommand(): void {
             return;
         }
         const selection = activeTextEditor.document.getText(activeTextEditor.selection);
+        vscode.window.showInformationMessage(`activeTextEditor.selection: ${activeTextEditor.selection}`);
+        vscode.window.showInformationMessage(`selection: ${selection}`);
         cmd.stdin.write(selection);
         cmd.stdin.end();
     }
